@@ -1,0 +1,32 @@
+{
+  "name": "token-airdrop-contract",
+  "version": "1.0.0",
+  "description": "I have been across many DAPPs to Airdrop Tokens. I found that DAPPs are charging way more to just privide airdrop services. This smart contract and airdrop.js code will help you to deploy your BSC/Ethereum Tokens without costing you extra money.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@fast-csv/parse": "^4.3.6",
+    "@openzeppelin/contracts": "^3.4.0",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "dotenv": "^16.0.0",
+    "web3": "^1.7.0"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.21"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingMonkTech/token-airdrop-contract.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodingMonkTech/token-airdrop-contract/issues"
+  },
+  "homepage": "https://github.com/CodingMonkTech/token-airdrop-contract#readme"
+}

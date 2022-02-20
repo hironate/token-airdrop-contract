@@ -15,11 +15,11 @@ contract Airdrop is Ownable {
         tokenAddr = _tokenAddr;
     }
 
-    function dropTokens(address[] memory _recipients, uint256 _amount) public onlyOwner returns (bool) {
+    function dropTokens(address[] memory _recipients, uint256[] memory _amount) public onlyOwner returns (bool) {
        
         for (uint i = 0; i < _recipients.length; i++) {
             require(_recipients[i] != address(0));
-            require(Token(tokenAddr).transfer(_recipients[i], _amount));
+            require(Token(tokenAddr).transfer(_recipients[i], _amount[i]));
         }
 
         return true;

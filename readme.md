@@ -18,8 +18,8 @@ List of Addresses you want to airdrop tokens to. (Sample file included, you can 
 ##### src/airdrop.js
 This is a node script to interect with deployed airdrop smart contract. it reads list of airdrop beneficiaries and airdrops token in batch size you have specified. in ```init3``` function you need to specify deployed smart contract address.
 
-##### .secret
-File which contains 12 secret mnemonic phrases of your hd wallet.
+##### .env
+File which contains 12 secret mnemonic phrases of your hd wallet in SEED_PHRASE variable.
 
 #### Commands to deploy and airdrop
 
@@ -35,6 +35,8 @@ File which contains 12 secret mnemonic phrases of your hd wallet.
 
 ##### Token Airdrop
  - Goto src directory
+ - Update Contract Address in .env file.
+ - Update BATCH_SIZE (how many accounts at a time you want to do airdrop) in .env
  - Run ```node airdrop.js```
  - Done Script will start airdroping tokens. Dont forget to set gas price you want and maintain balance into your wallet.
 
